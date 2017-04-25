@@ -3,6 +3,9 @@ class PostsController < ApplicationController
   def index
   end
 
+  def submit
+  end
+
   def new
     @post = Post.new
   end
@@ -10,6 +13,10 @@ class PostsController < ApplicationController
   def create
     @post = Post.create(post_params)
     redirect_to @post
+  end
+
+  def show
+    @post = Post.find(params[:id])
   end
 
   private
