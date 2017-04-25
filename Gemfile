@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'capybara'
 gem 'haml'
 gem 'simple_form'
+gem 'paperclip', "~> 5.0.0"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
